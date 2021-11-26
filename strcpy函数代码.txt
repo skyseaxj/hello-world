@@ -1,0 +1,18 @@
+char*StrCpy(char*src)
+{
+   int len=0;
+   char*p=NULL;
+   len=strlen(src);
+   p=(char*)malloc(sizeof(char)*(len+1));    //申请空间
+   if(p)    
+  exit();     //错误返回
+  do            //复制
+  {
+     *p=*src;
+     p++;
+     src++；
+   }while(*src!='\0');
+  *p='\0'；
+  return p;
+}
+   
